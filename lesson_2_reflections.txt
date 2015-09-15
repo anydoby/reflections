@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	The git init will create git metadata in current directory with all the info about tracked files and their versions. Without repository a directory will just contain unversioned files.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	
+	Staging area is a temporary space where added and modified files are located which will be eligible for commit. Working directory is the file system directory where the tracked files are physically located. The repository is where you commit the staging area contents time after time. Staging area does not have history, working directory as well. Only repository has history.
