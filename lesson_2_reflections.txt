@@ -5,3 +5,23 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 	
 	Staging area is a temporary space where added and modified files are located which will be eligible for commit. Working directory is the file system directory where the tracked files are physically located. The repository is where you commit the staging area contents time after time. Staging area does not have history, working directory as well. Only repository has history.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	Before committing a story (making a logical change) you may add changed files pertaining to the logical change to the staging area. Your working area may still contain modified files which will not be committed.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Branches come in handy when you need to deviate from the main development process and explore or refactor. You can work on 'almost' the same codebase as the master and still be able to switch to the master or any other branch instantly.
+
+How do the diagrams help you visualize the branch structure?
+
+	Using a diagram build based on commit's parent commit makes it easy to understand which commit happened after which and when a branch was created.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	The result of merging 2 branches is a commit with cummulative changes that happened since the point of branch creation to the point of merge. The merge commit has 2 parents - the latest commits of the 2 branches merged.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Pros of automatic merging are: they are quick. They will work well for cases when the same line was not modified in both commits. Manual merging is nice since you definitely will see the actual change before you commit the merge. But it is also slower in most cases when you have no conflicts.
