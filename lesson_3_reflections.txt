@@ -3,3 +3,6 @@ When would you want to use a remote repository rather than keeping all your work
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 	You can work in a forest this way. And only sync when you get back to the grid. Also not every commit needs to be immediately seen by others, they can be grouped for efficiency. I'd like to see what's changed by the others then I do a manual pull. Automatic pull would probably hide this from me.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+	Fork is a clone only related to GitHub. A fork does a clone on GitHub and retains a link to the original repository. A branch is a tag on a commit, so they can exist both locally and remotely. Fork and clone can be used interchangeably, of course you will lose some history if you use clone instead of fork.
